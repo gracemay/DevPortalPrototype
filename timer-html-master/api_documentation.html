@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <head>
         <!-- Basic Page Needs
         ================================================== -->
@@ -9,7 +10,7 @@
         <title>SWIFT API Developer Portals</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <meta name="author" content="">
+        <meta name="author" content=""> 
         <!-- Mobile Specific Metas
         ================================================== -->
         <meta name="format-detection" content="telephone=no">
@@ -23,27 +24,25 @@
         <!-- Ionicons Fonts Css -->
         <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
         <!-- animate css -->
-        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <link rel="stylesheet" href="plugins/animate-css/animate.css"> 
         <!-- Hero area slider css-->
-        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <link rel="stylesheet" href="plugins/slider/slider.css"> 
         <!-- owl craousel css -->
         <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
         <!-- Fancybox -->
-        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css"> 
         <!-- template main css file -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
-
         <!--
         ==================================================
         Header Section Start
         ================================================== -->
         <header id="top-bar" class="navbar-fixed-top animated-header">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header"> -->
                     <!-- responsive nav button -->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -58,7 +57,7 @@
                         <a href="index.html" >
                             <img src="images/SWIFT_Logo_RGB_1.png" alt="" height="55" width="55">
                         </a>
-                    </div>
+                    </div> -->
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
@@ -72,7 +71,9 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our APIs <span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a href="about.html">Products</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="api_documentation.html">Documentation</a></li>
+   <!-- GRACE IS HERE!! -->
                                         <li><a href"apismartdoc.html">API SmartDoc</a></li>
                                     </ul>
                                 </div>
@@ -103,7 +104,7 @@
                                         <li><a href="gallery.html">Gallery</a></li>
                                     </ul>
                                 </div>
-                            </li> 
+                            </li> -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
                                 <div class="dropdown-menu">
@@ -113,35 +114,49 @@
                                         <li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
                                     </ul>
                                 </div>
-                            </li> -->
+                            </li>
                             <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                        </ul> 
                     </div>
                 </nav>
                 <!-- /main nav -->
-            </div>
+           </div>
         </header>
         
-
-<!--=================================
-=            404 Section            =
-==================================-->
-<section class="moduler wrapper_404">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >404</h1>
-                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s">Opps! You have some problems</h2>
-                    <p class="wow fadeInUp animated" data-wow-delay=".9s">The page you are looking for was moved, removed, renamed or might never existed.</p>
-                    <a href="index.html" class="btn btn-dafault btn-home wow fadeInUp animated" data-wow-delay="1.1s">Go Home</a>
-                    
-                </div>
-            </div>
+<section id="apidoc">
+    <li ng-repeat="tab in list" ng-model="doclist" ng-list="usedoclist=true">
+        <div ng-if="usedoclist">
+            <p>hello world!</p>
+        
+        s
         </div>
-    </div>
+    </li>
+        
+        
+        
 </section>
+    
+    
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
             <!--
             ==================================================
             Call To Action Section Start
@@ -222,5 +237,6 @@
 	<script src="plugins/facncybox/jquery.fancybox.js"></script>
 	<!-- template main js -->
 	<script src="js/main.js"></script>
- 	</body>
+ 	</body>    
+    
 </html>
